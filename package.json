@@ -1,0 +1,33 @@
+{
+  "name": "lift-kata",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/tJimbow/lift-kata#readme",
+  "bugs": {
+    "url": "https://github.com/tJimbow/lift-kata/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tJimbow/lift-kata.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.ts",
+  "scripts": {
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.47.0",
+    "@typescript-eslint/parser": "^8.47.0",
+    "@vitest/coverage-v8": "^4.0.13",
+    "@vitest/ui": "^4.0.13",
+    "eslint": "^9.39.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.13"
+  }
+}
