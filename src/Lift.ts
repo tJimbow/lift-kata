@@ -1,24 +1,24 @@
 export interface LiftConfig {
-  id: number;
+  id: string;
   floor: number;
   requests?: number[];
-  doorsOpen: boolean;
+  doorsOpen?: boolean;
 }
 
 export class Lift {
-  private id: number;
+  private id: string;
   private floor: number;
   private requests: number[];
   private doorsOpen: boolean;
 
-  constructor({ id, floor, requests = [], doorsOpen }: LiftConfig) {
+  constructor({ id, floor, requests = [], doorsOpen = false }: LiftConfig) {
     this.id = id;
     this.floor = floor;
     this.requests = requests;
     this.doorsOpen = doorsOpen;
   }
 
-  getId(): number {
+  getId(): string {
     return this.id;
   }
 
