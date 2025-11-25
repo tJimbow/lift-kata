@@ -1,10 +1,24 @@
 # lift-kata
 
+Kata de simulation de système d'ascenseur en TypeScript.
+
+## Modules
+
+- **Direction** : Constantes pour les directions (up/down)
+- **Call** : Représente un appel d'ascenseur avec étage et direction
+- **Lift** : Représente un ascenseur avec son état (étage, requêtes, portes)
+- **LiftSystem** : Système de gestion des ascenseurs
+
 ## Structure du projet
 
 ```
 lift-kata/
 ├── src/          # Code source TypeScript
+│   ├── Direction.ts
+│   ├── Call.ts
+│   ├── Lift.ts
+│   ├── LiftSystem.ts
+│   └── index.ts
 ├── test/         # Tests Vitest (.spec.ts)
 ├── coverage/     # Rapport de couverture (généré)
 └── node_modules/ # Dépendances
